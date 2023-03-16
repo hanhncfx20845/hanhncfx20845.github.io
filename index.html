@@ -18,7 +18,7 @@
         for (let file of data) {
           if (`${file.name}` == window.location.hostname) continue;
           htmlString +=
-            `<li><a href="${file.name}" target="_blank">` +
+            `<li><a href="${file.name}">` +
             window.location.hostname +
             "/" +
             `${file.name}</a></li>`;
