@@ -13,7 +13,7 @@
           "https://api.github.com/users/hanhncfx20845/repos"
         );
         const data = await response.json();
-        let htmlString = "<ul>";
+        let htmlString = "<div>List of public repos found:</div><ul>";
 
         for (let file of data) {
           if (`${file.name}` == window.location.hostname) continue;
